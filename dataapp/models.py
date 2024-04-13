@@ -31,11 +31,7 @@ class mojo(models.Model):
     Color = models.CharField(max_length=60,default = " ")
     Shade_No = models.CharField(max_length=60,default = " ")
     Style_name = models.CharField(max_length=60,default = " ")
-<<<<<<< HEAD
     images = models.ImageField(upload_to="mojoimages")
     def __str__(self) -> str:
         return '%s'%self.Item_Code
-=======
-    images = models.ImageField(upload_to='mojoimages',null=True)
->>>>>>> 66865e54026e1ac6c11630125915e76d0f6f82ca
     
