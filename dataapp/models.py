@@ -31,4 +31,5 @@ class mojo(models.Model):
     Color = models.CharField(max_length=60,default = " ")
     Shade_No = models.CharField(max_length=60,default = " ")
     Style_name = models.CharField(max_length=60,default = " ")
+    images = models.ImageField(upload_to='mojoimages',null=True)
     
