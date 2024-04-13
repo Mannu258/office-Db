@@ -1,0 +1,17 @@
+from django.shortcuts import render
+from . models import *
+
+# Create your views here.
+
+def index(request):
+    params = mojo.objects.all()
+    try:
+        if request.method=="POST":
+            code = request.POST.get('code')
+            print(code)
+            params = mojo.objects.filter(Item_Code=code)
+    except:
+        params = mojo.objects.all()
+
+    return render(request,'index.html',{'params':params})
+
