@@ -17,33 +17,6 @@
         <div class="d-flex justify-content-center">
             <a class="btn btn-success" href="/">Home</a>
             </div>
-
-    <!-- <td>{{params.Item_Code}} </td>
-    <td>{{params.Item_name}} </td>     
-    <td> </td> 
-    <td> </td>  
-    <td> </td>  
-    <td> </td>  
-    <td> </td>  
-    <td> </td>  
-    <td> </td> 
-    <td> </td>  
-    <td> </td>
-    <td> </td>  
-    <td> </td>  
-    <td> </td>  
-    <td> </td>  
-    <td> </td>	  
-    <td> </td>  
-    <td> </td>  
-    <td> </td>  
-    <td> </td>  
-    <td> </td>  
-    <td> </td>  
-    <td> </td>   
-    <td> </td>  
-    <td> </td>-->
-
     {%for params in params%}
     <div class="container text-center">
 
@@ -55,7 +28,7 @@
                     <div class="border border-secondary">
 
 
-                        <h2>Item Code: {{params.Item_Code}}</h2>
+                        <h2>Item Code: {{params.Item_Code}}</h2><hr>
                         <h2>Item Name: {{params.Item_name}}</h2>
                     </div>
                     <div class="col">
@@ -114,7 +87,6 @@
                 </div>
             </div>
             {%endfor%}
-            <!-- Repeat for other items -->
         </div>
     </div>
 </body>

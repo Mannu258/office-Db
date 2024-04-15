@@ -11,3 +11,9 @@ body{
     background-color: #2b5d80;
     color: white;
 }
+#logo{
+    position: absolute;
+    width: 400px;
+    top: 10px;
+    left: 25px;
+}
