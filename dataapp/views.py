@@ -15,3 +15,8 @@ def index(request):
 
     return render(request,'index.html',{'params':params})
 
+def details(request,id):
+    params = mojo.objects.filter(id=id)
+    return render(request,'details.html',{'params':params})
+
+
