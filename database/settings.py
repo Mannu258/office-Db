@@ -114,13 +114,12 @@ USE_TZ = True
 import os
 STATIC_URL = 'static/'
 
-if DEBUG==False:
-    STATIC_ROOT = BASE_DIR/'staticfiles/'
-else:
-    STATICFILES_DIRS = [
-        BASE_DIR/"static"
+
+STATICFILES_DIRS = [
+        BASE_DIR/"static"     
     ]
-# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATIC_ROOT = BASE_DIR/'staticfiles/'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 MEDIA_URL = '/media/'
 # Default primary key field type
