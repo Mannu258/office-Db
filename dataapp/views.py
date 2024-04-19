@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from . models import *
+from django.db.models import Q
 
 # Create your views here.
 
@@ -8,8 +9,8 @@ def index(request):
     try:
         if request.method=="POST":
             code = request.POST.get('code')
-            print(code)
-            params = mojo.objects.filter(Item_Code=code)
+            # print(code)
+            params = mojo.objects.filter(Q(Item_Code__icontains=code) | Q(Item_name__icontains=code))
     except:
         params = mojo.objects.all().order_by('Item_Code')
 
@@ -18,5 +19,6 @@ def index(request):
 def details(request,id):
     params = mojo.objects.filter(id=id)
     return render(request,'details.html',{'params':params})
+
 
 
