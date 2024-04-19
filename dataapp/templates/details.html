@@ -26,55 +26,86 @@
             <div class="bor">
                 <div class=row>
 
+
+                    <!-- Item_Code  
+                    Item_name  
+                    Raw_Material  
+                    Category  
+                    Material_Content  
+                    Color  
+                    Design_Print_GG  
+                    Width  
+                    Count  
+                    Thickness  
+                    GSM  
+                    Micron  
+                    Size  
+                    Weight_Kgs  
+                    QTY  
+                    QTY_MTR  
+                    Category_End_use  
+                    OLD_Code  
+                    Source_vendor_detail  
+                    date  
+                    Price   
+                    Qty_G   
+                    GST 
+                    Received_Date  
+                    Recived_by   
+                    Vendor_Code  
+                    Remark -->
+
                     <div class="border border-secondary">
 
 
+                        
                         <h2>Item Code: {{params.Item_Code}}</h2><hr>
                         <h2>Item Name: {{params.Item_name}}</h2>
                     </div>
                     <div class="col">
+                        <p><span>Raw Material:</span> {{params.Raw_Material}}</p>
+			<p><span>Category:</span> {{params.Category}}</p>
+			<p><span>Material Content:</span> {{params.Material_Content}}</p>
                         <p><span>Color:</span> {{params.Color}}</p>
-                        <p><span>Width:</span> {{params.width}}</p>
-                        <p><span>Weight KGS:</span> {{params.Weight_KGS}}</p>
-                        <p><span>GSM Size:</span> {{params.GSM_Size }} </p>
+                        
 
                     </div>
                     <div class="col">
-                        <p><span>Qty:</span>{{params.Qty}} </p>
-                        <p><span>Material Content:</span> {{params.Material_Content}} </p>
-                        <p><span>Category End use:</span> {{params.Category_End_use}} </p>
-                        <p><span>Vendor Code:</span> {{params.Vendor_Code}} </p>
+                        <p><span>Design Print GG:</span> {{params.Design_Print_GG}}</p>
+                        <p><span>Width:</span> {{params.Width }} </p>
+                        <p><span>CategoryCount:</span> {{params.Count}} </p>
+                        <p><span>Thickness:</span> {{params.Thickness}} </p>
 
                     </div>
                     <div class="col">
-                        <p><span>OLD Code:</span>{{params.OLD_Code}} </p>
-                        <p><span>Source Vendor Detail:</span> {{params.Source_vendor_detail }} </p>
-                        <p><span>Date:{{params.Date}}</span> </p>
-                        <p><span>PRICE:{{params.PRICE}} </span></p>
+                        <p><span>GSM:</span>{{params.GSM}} </p>
+                        <p><span>Micron:</span> {{params.Micron}} </p>
+                        <p><span>Size:{{params.Size}}</span> </p>
+                        <p><span>Weight Kgs:{{params.Weight_Kgs}} </span></p>
 
                     </div>
                     <div class=row>
                         <div class="col">
-                            <p><span>GST:</span>{{params.GST}} </p>
-                            <p><span>Thickness:</span>{{params.Thickness}} </p>
-                            <p><span>Received Date:</span>{{params.Received_Date}} </p>
-                            <p><span>Received BY:</span> {{params.Received_BY}} </p>
+                            <p><span>QTY:</span>{{params.QTY}} </p>
+                            <p><span>QTY MTR:</span>{{params.QTY_MTR}} </p>
+                            <p><span>Category End use:</span>{{params.Category_End_use}} </p>
+                            <p><span>OLD Code:</span> {{params.OLD_Code}} </p>
 
                         </div>
                         <div class="col">
-                            <p><span>Remarks:</span>{{ params.Remarks}} </p>
-                            <p><span>Design Print GG:</span>{{params.Design_Print_GG}} </p>
-                            <p><span>Qty in MTR:</span>{{params.Qty_in_MTR}} </p>
-                            <p><span>Style_name </span>{{params.Style_name}}</p>
+                            <p><span>Source Vendor Detail:</span>{{ params.Source_vendor_detail}} </p>
+                            <p><span>date:</span>{{params.date}} </p>
+                            <p><span>Price:</span>{{params.Price}} </p>
+                            <p><span>Qty_G</span>{{params.Qty_G}}</p>
 
                         </div>
                         <div class="col">
-                            <p><span>Micron:</span>{{params.Micron}}</p>
-                            <p><span>Count:</span>{{params.Count}} </p>
-                            <p><span>Fiber Length:</span>{{params.Fiber_Length}} </p>
-                            <p><span>Mtr:</span>{{params.Mtr}} </p>
-                            <p><span>Shade_No:</span>{{params.Shade_No}} </p>
-
+                            <p><span>GST:</span>{{params.GST}}</p>
+                            <p><span>Received Date</span>{{params.Received_Date}} </p>
+                            <p><span>Recived_by:</span>{{params.Recived_by}} </p>
+                            <p><span>Vendor_Code:</span>{{params.Vendor_Code}} </p>
+                            <p><span>Remark:</span>{{params.Remark}} </p>
+                        </div>
                         </div>
 
                     </div>
