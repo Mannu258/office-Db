@@ -1,35 +1,5 @@
 from django.db import models
 
-# Item Code 
-# Item name 
-# Raw Material
-# Category 
-# Material Content 
-# Color
-# Design/Print/GG
-# Width 
-# Count
-# Thickness
-# GSM
-# Micron
-# Size 
-# "Weight Kgs"
-# QTY
-# QTY MTR
-#  Category (End use) 
-# OLD Code
-# Source (vendor detail) 
-# date
-# Price 
-# Qty_G
-# GST %
-# Received Date
-# Recived by 
-# Vendor Code
-# Remark
-
-
-
 
 class mojo(models.Model):
     Item_Code = models.IntegerField(null=False)
@@ -59,6 +29,7 @@ class mojo(models.Model):
     Recived_by  = models.CharField(max_length=60,default = " ",null  = True)
     Vendor_Code = models.CharField(max_length=60,default = " ",null  = True)
     Remark = models.CharField(max_length=60,default = " ",null  = True)
+    images = models.ImageField(upload_to="mojoimages")
 
     def __str__(self) -> str:
         return '%s'%self.Item_Code
