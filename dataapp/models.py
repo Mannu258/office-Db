@@ -29,7 +29,7 @@ class mojo(models.Model):
     Recived_by  = models.CharField(max_length=60,default = " ",null  = True)
     Vendor_Code = models.CharField(max_length=60,default = " ",null  = True)
     Remark = models.CharField(max_length=60,default = " ",null  = True)
-    images = models.ImageField(upload_to="mojoimages")
+    images = models.ImageField(upload_to="mojoimages",null=True)
 
     def __str__(self) -> str:
         return '%s'%self.Item_Code
