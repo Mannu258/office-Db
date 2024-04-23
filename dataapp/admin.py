@@ -29,3 +29,4 @@ class MojoAdmin(admin.ModelAdmin):
 admin.site.register(mojo, MojoAdmin )
 
 
+# Qud30534
