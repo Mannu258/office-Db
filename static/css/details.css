@@ -60,14 +60,13 @@ body {
 }
 
 
+
 .image-container {
-    border: 1px solid #000;
     /* Adjust border properties as needed */
     height: 300px;
     width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
+    margin-right: 40px; /* Adjust spacing between images */
 }
 
 .submit-button {

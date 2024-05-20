@@ -1,0 +1,9 @@
+# Ignore Python cache files
+__pycache__/
+
+# Ignore Python cache files within the 'database' directory
+database/__pycache__/
+
+# Ignore Python cache files within the 'dataapp' directory
+dataapp/__pycache__/
+
