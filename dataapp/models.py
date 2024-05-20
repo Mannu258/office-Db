@@ -29,9 +29,9 @@ class mojo(models.Model):
     Recived_by  = models.CharField(max_length=60,default = " ",null  = True)
     Vendor_Code = models.CharField(max_length=60,default = " ",null  = True)
     Remark = models.CharField(max_length=60,default = " ",null  = True)
-    images = models.ImageField(upload_to="mojoimages",null=True)
-    images2 = models.ImageField(upload_to="mojoimages",null=True)
-    images3 = models.ImageField(upload_to="mojoimages",null=True)
+    images = models.ImageField(upload_to="mojoimages",blank=True)
+    images2 = models.ImageField(upload_to="mojoimages",blank=True)
+    images3 = models.ImageField(upload_to="mojoimages",blank=True)
 
 
     def __str__(self) -> str:
