@@ -4,6 +4,7 @@
   {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="9PC_sz0uNpfgOx1fw5gqvZa_eyzPhmq1FUs3KSpreok" />
     <title>MojoPanda Exim Private Limited</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -49,7 +50,7 @@
         <tbody>
           <th scope="row">{{forloop.counter}}</th>
           <td><a href= "{% url 'details' params.id %}">{{params.Item_Code}}</a></td>
-          <td><a href="{% url 'details' params.id %}">{{params.Item_name}}</a> </td>  
+          <td><a href="{% url 'details' params.id %}">{{params.Item_name}}</a> </td>
         </tbody>
         {%endfor%}
     </table>
